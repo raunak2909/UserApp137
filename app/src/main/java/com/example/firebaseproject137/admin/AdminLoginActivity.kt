@@ -1,0 +1,21 @@
+package com.example.firebaseproject137.admin
+
+import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import com.example.firebaseproject137.R
+import com.example.firebaseproject137.databinding.ActivityAdminLoginBinding
+
+class AdminLoginActivity : AppCompatActivity() {
+    lateinit var binding: ActivityAdminLoginBinding
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        binding = ActivityAdminLoginBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        binding.btnAdminLogin.setOnClickListener {
+            startActivity(Intent(this, AdminHomeActivity::class.java))
+
+        }
+    }
+}

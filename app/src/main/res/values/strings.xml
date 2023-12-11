@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">firebaseproject137</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="openDrawer">Open Navigarion Drawer</string>
+    <string name="closeDrawer">Close Navigarion Drawer</string>
+</resources>
