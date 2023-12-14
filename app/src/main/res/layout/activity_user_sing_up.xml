@@ -8,7 +8,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".UserSingUp.SingUpActivity">
+    tools:context=".UserSingUpActivity">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -45,20 +45,6 @@
                 android:orientation="vertical"
                 android:gravity="center">
 
-                <de.hdodenhof.circleimageview.CircleImageView
-
-                    android:id="@+id/userImg"
-                    android:layout_width="200dp"
-                    android:layout_height="200dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/person"
-                    app:civ_border_width="2dp"
-                    app:civ_border_color="@color/black"
-                    app:civ_border_overlay="true"
-                    android:layout_marginTop="15dp"/>
-
-
-
                 <Button
                     android:layout_width="300dp"
                     android:layout_height="wrap_content"
@@ -76,7 +62,6 @@
                 android:layout_marginTop="21dp"
                 android:layout_marginEnd="16dp"
                 android:background="@drawable/custome_edit_text"
-                android:drawableLeft="@drawable/baseline_person_24"
                 android:hint = "Enter your Full Name"
                 android:padding="11dp"/>
 
@@ -123,7 +108,6 @@
                 android:layout_marginEnd="16dp"
                 android:inputType="textEmailAddress"
                 android:background="@drawable/custome_edit_text"
-                android:drawableLeft="@drawable/baseline_email_24"
                 android:hint=" Enter your Email"
                 android:padding="11dp"/>
 
@@ -166,7 +150,6 @@
                     android:text="  Select Date"
                     android:textSize="20dp"
                     android:layout_gravity="center"
-                    android:drawableRight="@drawable/baseline_calendar_month_24"
                     android:padding="11dp"/>
             </LinearLayout>
 
@@ -190,18 +173,19 @@
 
 
                 <RadioGroup
+                    android:id="@+id/radioGrpGender"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <RadioButton android:id="@+id/radio_pirates"
+                    <RadioButton android:id="@+id/radio_male"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20sp"
                         android:textStyle="bold"
                         android:paddingRight="20dp"
                         android:text="Male"/>
-                    <RadioButton android:id="@+id/radio_ninjas"
+                    <RadioButton android:id="@+id/radio_female"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
@@ -261,7 +245,6 @@
                         android:layout_height="50dp"
                         android:inputType="textPassword"
                         android:background="@drawable/custome_edit_text"
-                        android:drawableLeft="@drawable/password"
                         android:hint = "Enter Password"
                         android:padding="11dp"/>
 
@@ -272,7 +255,6 @@
                         android:inputType="textPassword"
                         android:layout_marginTop="10dp"
                         android:background="@drawable/custome_edit_text"
-                        android:drawableLeft="@drawable/password"
                         android:hint = "Confirm Password"
                         android:padding="11dp"/>
                 </LinearLayout>
@@ -282,6 +264,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Submit"
+                android:id="@+id/btnSubmit"
                 android:textSize="24sp"
                 android:textStyle="bold"
                 android:layout_marginBottom="20dp"/>
