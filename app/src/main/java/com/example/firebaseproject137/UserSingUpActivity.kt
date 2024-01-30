@@ -113,8 +113,14 @@ class UserSingUpActivity : AppCompatActivity() {
                 "email" to email,
                 "pass" to pass,
                 "dob" to dob,
-                "gender" to gender
+                "gender" to gender,
+                "status" to 2,
             )
+
+            // 0-> Active,
+            // 1-> InActive,
+            // 2-> Pending,
+            // 3-> Block
 
             mAuth
                 .createUserWithEmailAndPassword(email, pass)
