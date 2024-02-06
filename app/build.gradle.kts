@@ -55,4 +55,7 @@ dependencies {
 
     //for cicrcularImageView
     implementation("de.hdodenhof:circleimageview:3.1.0")
+
+    // picasso for network image
+    implementation("com.squareup.picasso:picasso:2.71828")
 }
