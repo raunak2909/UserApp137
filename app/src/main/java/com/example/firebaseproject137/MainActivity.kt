@@ -7,6 +7,7 @@ import androidx.core.view.GravityCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import com.example.firebaseproject137.databinding.ActivityMainBinding
+import com.example.firebaseproject137.home.HomeFragment
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding

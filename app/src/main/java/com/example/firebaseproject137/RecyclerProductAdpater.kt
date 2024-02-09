@@ -26,7 +26,7 @@ class RecyclerProductAdpater(val context: Context, val arrProductData: ArrayList
         //holder.binding.productImg.setImageResource()
         Picasso.get().load(arrProductData[position].productImg).into(holder.binding.productImg);
         holder.binding.productName.text = arrProductData[position].productTitle
-        holder.binding.productPrice.text = "/$ ${arrProductData[position].productPrice.toString()}"
+        holder.binding.productPrice.text = "\u20B9 ${arrProductData[position].productPrice.toString()}"
 
         holder.binding.productImg.setOnClickListener {
             /*val intent = Intent(context, ProductDetailsActivity::class.java)
