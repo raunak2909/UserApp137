@@ -58,13 +58,13 @@
 
 
                    <Button
+                       android:id="@+id/btnAdd"
                        android:layout_width="0dp"
                        android:layout_weight="1"
                        android:layout_height="wrap_content"
                        android:text="Add"
                        android:textSize="20sp"
                        android:backgroundTint="#49804B"
-
                        app:cornerRadius="10dp"/>
 
                    <LinearLayout

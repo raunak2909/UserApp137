@@ -58,4 +58,8 @@ dependencies {
 
     // picasso for network image
     implementation("com.squareup.picasso:picasso:2.71828")
+
+    //slider
+    //implementation("com.github.smarteist:autoimageslider:1.4.0")
+    implementation("com.github.denzcoskun:ImageSlideshow:0.1.2")
 }

@@ -24,6 +24,7 @@
         <activity
             android:name=".admin.AdminSplashActivity"
             android:exported="false" />
+        <activity android:name=".ProductDetailsActivity"/>
         <activity
             android:name=".UserSingUpActivity"
             android:exported="false" />

@@ -1,5 +1,6 @@
 package com.example.firebaseproject137.data.remote
 
+import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import com.example.firebaseproject137.models.BannerModel
 import com.google.firebase.auth.FirebaseAuth
@@ -85,6 +86,24 @@ class AppRepository {
         }
 
         return mutableProductData
+
+    }
+
+    fun getProductDetails(pid : String) : ProductModel{
+        var productModel = ProductModel()
+
+        fireStoreDB.collection(COLLECTION_PRODUCT).whereEqualTo("productId", pid).get().addOnSuccessListener {
+            if(it.documents.size>0) {
+                productModel = it.documents[0].toObject(ProductModel::class.java)!!
+            }
+
+
+        }.addOnFailureListener {
+            Log.d("Product Details:", "Product not found!!")
+        }
+
+        return productModel
+
 
     }
 
