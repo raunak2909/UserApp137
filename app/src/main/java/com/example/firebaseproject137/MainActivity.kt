@@ -6,6 +6,7 @@ import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
+import com.example.firebaseecommerce.cart.BottomCartFragment
 import com.example.firebaseproject137.databinding.ActivityMainBinding
 import com.example.firebaseproject137.home.HomeFragment
 
@@ -41,8 +42,8 @@ class MainActivity : AppCompatActivity() {
                 R.id.drawer_home -> {
                     loagFrag(HomeFragment())
                 }
-                R.id.drawer_explore -> {
-                    loagFrag(ExploreFragment())
+                R.id.drawer_cart -> {
+                    loagFrag(BottomCartFragment())
                 }
                 R.id.drawer_create -> {
                     loagFrag(CreatFragment())

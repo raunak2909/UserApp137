@@ -58,7 +58,7 @@ class ProductDetailsActivity : AppCompatActivity() {
 
                 //setting price
                 binding.txtProductPrice.text = productModel.productPrice.toString()
-                binding.txtProductPrice.paintFlags = binding.txtProductPrice.paintFlags and Paint.STRIKE_THRU_TEXT_FLAG
+                binding.txtProductPrice.paintFlags = binding.txtProductPrice.paintFlags or Paint.STRIKE_THRU_TEXT_FLAG
 
 
                 val discountedPrice = productModel.productPrice - (productModel.productPrice*(productModel.productDiscountPer/100))

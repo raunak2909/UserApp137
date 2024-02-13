@@ -4,8 +4,8 @@
         android:title="Home"
         android:icon="@drawable/baseline_home_24"/>
 
-    <item android:id="@+id/drawer_explore"
-        android:title="Explore"
+    <item android:id="@+id/drawer_cart"
+        android:title="My Cart"
         android:icon="@drawable/baseline_explore_24"/>
 
     <item android:id="@+id/drawer_create"

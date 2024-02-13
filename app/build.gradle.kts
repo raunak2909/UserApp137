@@ -62,4 +62,7 @@ dependencies {
     //slider
     //implementation("com.github.smarteist:autoimageslider:1.4.0")
     implementation("com.github.denzcoskun:ImageSlideshow:0.1.2")
+
+    //viewmodel corountines
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0")
 }

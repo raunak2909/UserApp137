@@ -51,7 +51,7 @@ class AppRepository {
     }
 
     //getCategory
-    fun getCategories() : MutableLiveData<List<CategoryModel>>{
+    suspend fun getCategories() : MutableLiveData<List<CategoryModel>>{
 
         fireStoreDB.collection(COLLECTION_CAT).orderBy("createdAt").get().addOnSuccessListener {
             val arrCatData = ArrayList<CategoryModel>()
